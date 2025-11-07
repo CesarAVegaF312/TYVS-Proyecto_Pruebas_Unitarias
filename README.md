@@ -207,5 +207,5 @@ Puedes **usar, adaptar o compartir** este contenido con fines educativos, siempr
 
 ---
 
-© Universidad de La Sabana – Facultad de Ingeniería  
+© Universidad de La Sabana – Facultad de Ingeniería
 Maestría en Ingeniería de Software – 2025
