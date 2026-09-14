@@ -5,7 +5,7 @@ Cada estudiante o grupo debe seleccionar un **dominio propio** (por ejemplo: res
 
 ---
 
-## 🎯 Objetivos
+## Objetivos
 
 - Aplicar los principios del **Desarrollo Guiado por Pruebas (TDD)** en un dominio elegido libremente.
 - Diseñar pruebas unitarias que validen **reglas de negocio puras** (sin dependencias de bases de datos, HTTP o interfaces gráficas).
@@ -41,7 +41,7 @@ mvn jacoco:report
 
 ---
 
-> 💡 **Nota sobre el lenguaje de implementación**
+> **Nota sobre el lenguaje de implementación**
 >
 > El **Taller de Pruebas Unitarias** se desarrolla en **Java con Maven** como lenguaje y entorno de referencia para ilustrar los conceptos de TDD, AAA, Clases de Equivalencia, BDD y generación de cobertura con JaCoCo.
 >
@@ -56,7 +56,7 @@ mvn jacoco:report
 > - Se genere un **reporte de cobertura automatizada** (por ejemplo: coverage.py, Istanbul, o similar).
 > - Todo el proceso se documente en el **Wiki del repositorio**, siguiendo la estructura del taller.
 >
-> ⚠️ El cambio de lenguaje **no exime** la aplicación de los conceptos ni la presentación de evidencias del proceso TDD.
+> El cambio de lenguaje **no exime** la aplicación de los conceptos ni la presentación de evidencias del proceso TDD.
 > La evaluación se basará en la **metodología aplicada**, no en el lenguaje, sin embargo debe ser claro en la documentación sobre como se deben ejecutar las pruebas.
 
 ---
