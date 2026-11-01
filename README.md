@@ -1,13 +1,21 @@
 # Proyecto Final - Pruebas Unitarias
 
 Este proyecto corresponde al trabajo práctico sobre las **pruebas unitarias** como parte final del curso **Testing y Validación de Software**.
-Cada estudiante o grupo debe seleccionar un **dominio propio** (por ejemplo: reservas, inventarios, salud, educación, transporte, finanzas, etc.) y aplicar las estrategias vistas en el **Taller de Pruebas Unitarias** para diseñar, implementar y validar su propio módulo de negocio mediante **pruebas automatizadas**.
+Cada equipo trabaja sobre el **caso asignado** del [catálogo de casos](casos/README.md) y aplica las estrategias vistas en el **Taller de Pruebas Unitarias** para diseñar, implementar y validar el módulo de negocio de ese caso mediante **pruebas automatizadas**.
+
+## El caso del proyecto
+
+El proyecto del curso es **un solo sistema por equipo**, construido sobre su caso, que crece unidad a unidad: aquí se construye el dominio con TDD; en el [Proyecto de Pruebas de Integración](https://github.com/CesarAVegaF312/TYVS-Proyecto_Pruebas_Integracion) se le agregan persistencia, API REST y el servicio externo; y en el [Proyecto de Pruebas de Carga y Rendimiento](https://github.com/CesarAVegaF312/TYVS-Proyecto_Pruebas_carga_y_rendimiento) se somete a carga. Todo en el **mismo repositorio**.
+
+En esta entrega se implementan las **reglas de negocio de la ficha**, en el orden en que la ficha las define. El servicio externo es una interfaz que las pruebas reemplazan por un doble: la implementación real llega en la unidad 4.
+
+Los talleres usan la Registraduría como ejemplo resuelto; el caso es lo que usted resuelve. Las fichas comparten la estructura de la Registraduría, así que el taller se aplica paso a paso a cualquier caso.
 
 ---
 
 ## Objetivos
 
-- Aplicar los principios del **Desarrollo Guiado por Pruebas (TDD)** en un dominio elegido libremente.
+- Aplicar los principios del **Desarrollo Guiado por Pruebas (TDD)** sobre las reglas del caso asignado.
 - Diseñar pruebas unitarias que validen **reglas de negocio puras** (sin dependencias de bases de datos, HTTP o interfaces gráficas).
 - Implementar las pruebas siguiendo el patrón **AAA (Arrange – Act – Assert)**.
 - Definir y documentar **Clases de Equivalencia** y **Valores Límite**.
@@ -87,8 +95,8 @@ mvn jacoco:report
 #### Estructura sugerida del Wiki
 
 1. **Inicio**
-   - Descripción del dominio y propósito del sistema.
-   - Regla principal o problema a resolver.
+   - Caso asignado (enlace a su ficha) y propósito del sistema.
+   - **Supuestos resueltos**: cada ambigüedad de la ficha, la decisión tomada y la prueba que la fija.
    - Integrantes del equipo.
 
 2. **TDD (Red → Green → Refactor)**
@@ -146,7 +154,7 @@ mvn jacoco:report
 
 | **Criterios de evaluación** | **Indicadores de cumplimiento** | **Excelente (5 pts)** | **Bueno (4 pts)** | **Necesita mejorar (3.5 pts)** | **Deficiente (2.5 pts)** | **No cumple (0 pts)** |
 |------------------------------|---------------------------------|------------------------|--------------------|---------------------------------|---------------------------|------------------------|
-| **Diseño del dominio** | Claridad, coherencia y relevancia del dominio elegido. | Dominio bien definido, con reglas de negocio reales y aplicables. | Dominio comprensible, con reglas básicas bien identificadas. | Dominio poco claro o simplificado en exceso. | No hay correspondencia entre dominio y pruebas. | No se define dominio funcional. |
+| **Modelado del caso** | Fidelidad a las reglas de la ficha y tratamiento de sus ambigüedades. | Todas las reglas implementadas en el orden de la ficha, con los supuestos documentados y fijados por pruebas. | Reglas completas, supuestos documentados sin pruebas que los fijen. | Faltan reglas o se alteró su orden sin justificación. | Reglas inventadas o distintas de la ficha. | No implementa el caso asignado. |
 | **Estructura y organización del código** | Implementa arquitectura limpia y buenas prácticas. | Estructura ordenada, modular y coherente. | Cumple la mayoría de principios con leves inconsistencias. | Organización parcial o sin separación clara de capas. | Estructura confusa o con dependencias innecesarias. | No presenta estructura funcional. |
 | **Aplicación del ciclo TDD (Red → Green → Refactor)** | Evidencia de desarrollo iterativo basado en pruebas. | Documenta al menos 3 iteraciones claras con resultados. | Se evidencian ciclos parciales o incompletos. | TDD se menciona pero no se demuestra claramente. | Sin evidencia práctica de TDD. | No aplica TDD. |
 | **Patrón AAA (Arrange–Act–Assert)** | Claridad y consistencia en los tests. | Todos los tests aplican AAA correctamente. | Mayoría de los tests con AAA consistente. | Estructura irregular o confusa. | Solo algunos tests aplican AAA. | No se aplica AAA. |
@@ -177,7 +185,7 @@ mvn jacoco:report
 
 > **Nota final:**
 > Este proyecto es una **extensión práctica del Taller de Pruebas Unitarias**.
-> Se espera que los estudiantes **repliquen la metodología** aplicada en el taller dentro de su propio dominio.
+> Se espera que los estudiantes **repliquen la metodología** aplicada en el taller sobre su caso asignado.
 > Documentar todo el proceso en el **Wiki** del repositorio y demostrando el uso correcto de **TDD, AAA, Clases de Equivalencia y BDD**.
 
 ---
